@@ -1,0 +1,21 @@
+
+
+<!doctype html>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/style.css' %}">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>{{x}}</title>
+  
+ 
+
+</head>
+
+<body>
+        <h1>hello {{ x }} {{ f }}</h1>
+        <p>you are a<a href="{%'views.details'%}"> {{a}}</a></p>
+
+  </body>
+</html>

@@ -1,0 +1,33 @@
+
+    <!doctype html>
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static '/style.css' %}">
+
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+    
+      <title >{{x}}</title>
+      
+   
+    
+    </head>
+    
+    <body>
+            <form action="result" method="POST">
+                    {% csrf_token %}
+                    <p id="t1">please enter name:</p>
+                
+                    First name: <input placeholder="First name" name="name" required />
+                    <br>
+                    Last name: <input placeholder="Last name"name="fname" required/>
+                    <br>
+                    Age: <input placeholder="Age" type="number" name="age" min="1" max="120"  required />
+                    <br>
+                    <input id=b1 type="submit" value="Let's GO"/>
+                    </form>
+                    
+    
+      </body>
+    </html> 
